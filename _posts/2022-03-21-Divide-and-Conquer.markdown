@@ -1,8 +1,15 @@
 ---
 layout: post
-title: "내사랑 김수지"
-subtitle: "Choi Woo-young, an undergraduate information and communication engineering at Incheon National University."
+title: "분할 정복(Divide-and-Conquer)"
+subtitle: "Divide - and -Conquer"
 date: 2020-01-31 14:45:13 -0400
 background: '/img/posts/06.jpg'
 ---
-# 김수지는 세상에서 제일 예쁘다 
+# __분할 정복(Dvide-and-Conquer)이란?__
+분할 정복(Dvide-and-Conquer) 알고리즘이란 주어진 문제의 입력을 분할하여 문제를 해결하는 방식의 알고리즘이다. 분할된 입력에 대하여 동일한 알고리즘을 적용하여 해를 계산하며, 이들의 해를 취합하여 원래 문제의 해를 얻는다. 여기서 분할된 입력에 대한 문제를 부분문제라고 하고, 부분문제의 해를 부분해라고 한다. 부분문제는 더이상 분할할 수 없을 때까지 계속 분할 한다.
+
+## __합병 정렬(Merge Sort)__
+합병 정렬(Merge Sort)은 입력이 2개의 부분문제로 분할되고, 부분문제의 크기가 1/2로 감소하는 분할 정복 알고리즘이다. 즉, n개의 숫자들을 n/2개씩 2개의 부분문제로 분할하고, 각각의 부분문제를 순환적으로 합병 정렬한 후, 2개의 정렬된 부분을 합병하여 정렬한다. 즉, 합병 과정이 문제를 정복하는 것이다.
+
+## __퀵 정렬(Quick Sort)__
+퀵 정렬(Quick Sort)은 분할 정복 알고리즘으로 분류되나, 사실 알고리즘이 수행되는 과정을 살펴보면 정복 후 분할하는 알고리즘이다. 퀵 정렬 알고리즘은 문제를 2개의 부분문제로 분할하는데, 각 부분문제의 크기가 일정하지 않은 형태의 분할 정복 알고리즘이다.
