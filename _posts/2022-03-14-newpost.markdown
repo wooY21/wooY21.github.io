@@ -6,29 +6,29 @@ date: 2020-01-31 14:45:13 -0400
 background: '/img/posts/06.jpg'
 ---
 
-# 시간복잡도 (Time Complexity)
-* ## 시간복잡도 (Time Complexity)의 정의
+# __시간복잡도 (Time Complexity)__
+* ## __시간복잡도 (Time Complexity)의 정의__
 시간 복잡도란 알고리즘이 어떠한 문제를 해결하는데 걸리는 시간을 의미한다. 다시 말해, 시간 복잡도는 효율적인 방법으로 코드를 짜는 방식에 대한 평가 기준이라고 할 수 있다.  
 
-* ## Big-O 표기법
+* __## Big-O 표기법__
 시간복잡도는 Big-O 표기법을 기준으로 작성된다. 
 ![](https://search.pstatic.net/common/?src=http%3A%2F%2Fblogfiles.naver.net%2FMjAxOTEwMDNfMjk1%2FMDAxNTcwMDk5NjgyMTQ4.3CflfZ9vIsasyktC2i6zOmpKNu3IpdzQTL75XdioSjgg.8PTM3qKHzNbPrWqhUoha1aL9-saSWkyqhbo03hmMQnAg.PNG.tnwjd1776%2F11.PNG&type=a340)  
 
 위에 그래프에서 빨간색으로 갈 수록 효율적이지 못 한 것이고 초록색으로 갈 수록 효율적인 코드라는 의미이다. 따라서 우리가 추구해야할 시간 복잡도는 초록색에 가까워야한다.  
-* ## 그래프 타입별 코드 대응
+* ## __그래프 타입별 코드 대응__
 
-### 1. O(1)
+### __1. O(1)__
 먼저 O(1)이다. O(1)는 constant complexity라고도 불린다. 입력 값이 얼마인지에 상관 없이 즉시 출력 값이 나온다는 것이다. 
 
-### 2. O(n)
+### __2. O(n)__
 O(n)은 linear complexity라고도 불린다. 입력 값이 증가함에 따라 시간 또한 같은 비율로 증가한다. 
 
-### 3. O(log n)
+### __3. O(log n)__
 O(log n)은 lograithmic complexity라고도 불린다. 모든 Big-O표기법중  constant complexity 다음으로 빠른 시간 복잡도를 가진다. 
 
-### 4. O(n^2)
+### __4. O(n^2)__
 O(n^2)는 quadratic complexity라고도 불리며, 입력 값이 증가함에 따라 시간이 제곱수의 비율로 증가한다.
 
-### 5. O(2^n)
+### __5. O(2^n)__
 O(2^n)은 exponential complexity라고도 불린다. 모든 Big-O 표기법중 가장 느린 시간 복잡도를 가진다. 
 
