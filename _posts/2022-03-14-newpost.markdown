@@ -10,7 +10,7 @@ background: '/img/posts/06.jpg'
 * ## __시간복잡도 (Time Complexity)의 정의__
 시간 복잡도란 알고리즘이 어떠한 문제를 해결하는데 걸리는 시간을 의미한다. 다시 말해, 시간 복잡도는 효율적인 방법으로 코드를 짜는 방식에 대한 평가 기준이라고 할 수 있다.  
 
-* __## Big-O 표기법__
+* ## __Big-O 표기법__
 시간복잡도는 Big-O 표기법을 기준으로 작성된다. 
 ![](https://search.pstatic.net/common/?src=http%3A%2F%2Fblogfiles.naver.net%2FMjAxOTEwMDNfMjk1%2FMDAxNTcwMDk5NjgyMTQ4.3CflfZ9vIsasyktC2i6zOmpKNu3IpdzQTL75XdioSjgg.8PTM3qKHzNbPrWqhUoha1aL9-saSWkyqhbo03hmMQnAg.PNG.tnwjd1776%2F11.PNG&type=a340)  
 
