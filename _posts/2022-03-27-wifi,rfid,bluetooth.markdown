@@ -2,7 +2,7 @@
 layout: post
 title: "Wi-Fi,RFID,Bluetooth 통신의 특징"
 subtitle: "Communication Trait"
-date: 2022-03-28- 12:25 - 04:00
+date: 2022-03-28- 12:25:25 -0400
 background: '/img/posts/06.jpg'
 ---
 
