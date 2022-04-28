@@ -9,3 +9,5 @@ __capacity constraint : f(u,v)≤c(u,v), 유량이 용량보다 클 수는 없�
 skew symmetry : f(u,v)=−f(v,u)
 flow conservation : 각 node에서 유량은 새로 더해지거나 감소하지 않는다.__  
 
+다음은 표기 방법이다. 만약 용량 정보가 c(u,v) = 10,  c(v,u)=4  
+![제목 없음](https://user-images.githubusercontent.com/101376961/165784208-54b055ea-5ee5-4389-97c0-4cfb9d734bc4.jpg)
