@@ -31,6 +31,16 @@ cf(u,v)=c(u,v)−f(u,v)
 ![image](https://user-images.githubusercontent.com/101376961/165789767-42d22a42-fe11-4290-90c4-a1b9c830a580.png)
 이 경우에서는 최대 유량이 2이다. 이번엔 최대 유량(2)만큼을 흘려 보내는 엣지를 만들고 s > t의 경로를 찾는다. 하지만, 이 경우에 s에서 t로 가는 경로가 더이상 존재하지 않는다. 
 ![image](https://user-images.githubusercontent.com/101376961/165790011-dadce4cd-6f9a-4d40-ae2d-a4cfb3e7cfaa.png)  
-알고리즘을 종료한다. 위 그래프는 residual network 그래프이다. 따라서, s에서 t로 향하는 최대 유량은 a에서 t의 2, b에서 t의 3, 이렇게 해서 총 5가 된다.
-
+알고리즘을 종료한다. 위 그래프는 residual network 그래프이다. 따라서, s에서 t로 향하는 최대 유량은 a에서 t의 2, b에서 t의 3, 이렇게 해서 총 5가 된다.  
+다음은 Ford-Fulkerson 알고리즘의 의사코드이다.  
+'''
+__for__ each edge (u,v) E E[G]
+    __do__ f[u,v] <- 0
+           f[v,u] <- 0
+           
+__while__ there exists a path p from s to t in the residual network Gf     __do__ Cf (p) <- min{Cf (u,v) : (u,v) is in p}
+      __for__ each edge (u,v) in p
+      __do__ f[u,v] <- f[u,v] + Cf (p)
+             f[v,u] <- -f[u,v]
+'''
 
