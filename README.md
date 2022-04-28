@@ -34,14 +34,14 @@ cf(u,v)=c(u,v)−f(u,v)
 알고리즘을 종료한다. 위 그래프는 residual network 그래프이다. 따라서, s에서 t로 향하는 최대 유량은 a에서 t의 2, b에서 t의 3, 이렇게 해서 총 5가 된다.  
 다음은 Ford-Fulkerson 알고리즘의 의사코드이다.  
 ```
-__for__ each edge (u,v) E E[G]
-    __do__ f[u,v] <- 0
+for each edge (u,v) E E[G]
+    do f[u,v] <- 0
            f[v,u] <- 0
            
-__while__ there exists a path p from s to t in the residual network Gf  
-__do__ Cf (p) <- min{Cf (u,v) : (u,v) is in p}  
-__for__ each edge (u,v) in p  
-      __do__ f[u,v] <- f[u,v] + Cf (p)  
+while there exists a path p from s to t in the residual network Gf  
+do Cf (p) <- min{Cf (u,v) : (u,v) is in p}  
+for each edge (u,v) in p  
+      do f[u,v] <- f[u,v] + Cf (p)  
              f[v,u] <- -f[u,v]  
 ```
 
